@@ -70,7 +70,7 @@ namespace SignUpGenius.Controllers
 
         public IActionResult Appointments()
         {
-            return View();
+            return View(_context.Form);
         }
 
         public IActionResult Privacy()

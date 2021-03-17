@@ -1,0 +1,107 @@
+﻿@{
+    ViewData["Title"] = "Sign Up Page";
+}
+
+@model SignUpGenius.Models.FormModel
+
+
+<div class="container col-10 shadow-lg p-3 mb-5 rounded" style="border:3px solid black; background-color:#90EE90">
+    <div class="text-center">
+        <h1>Sign Up Here!</h1>
+    </div>
+    <br />
+    <!-- <link href="~/css/styles.css" rel="stylesheet" /> -->
+
+    <div>
+        <h4 class="text-center">Choose your time slot:</h4>
+        <br />
+
+        <!-- Form to type in and submit movies to collection -->
+        <form asp-action="SignUpPage" method="post" class="text-center">
+            <div class="form-row justify-content-center">
+                <div class="col-sm-2 text-center">
+                    <h5>Monday</h5>
+                    <input type="radio" name="time" asp-for="Time" value="Mon, 8:00 A.M." id="mon_eightam"> <label for="mon_eightam">8:00 A.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Mon, 9:00 A.M." id="mon_nine">    <label for="mon_nine">9:00 A.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Mon, 10:00 A.M." id="mon_ten">    <label for="mon_ten">10:00 A.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Mon, 11:00 A.M." id="mon_eleven"> <label for="mon_eleven">11:00 A.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Mon, 12:00 P.M." id="mon_twelve"> <label for="mon_twelve">12:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Mon, 1:00 P.M." id="mon_one">     <label for="mon_one">1:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Mon, 2:00 P.M." id="mon_two">     <label for="mon_two">2:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Mon, 3:00 P.M." id="mon_three">   <label for="mon_three">3:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Mon, 4:00 P.M." id="mon_four">    <label for="mon_four">4:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Mon, 5:00 P.M." id="mon_five">    <label for="mon_five">5:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Mon, 6:00 P.M." id="mon_six">     <label for="mon_six">6:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Mon, 7:00 P.M." id="mon_seven">   <label for="mon_seven">7:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Mon, 8:00 P.M." id="mon_eightpm"> <label for="mon_eightpm">8:00 P.M.</label><br>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <h5>Tuesday</h5>
+                    <input type="radio" name="time" asp-for="Time" value="Tue, 8:00 A.M." id="tue_eightam"> <label for="tue_eightam">8:00 A.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Tue, 9:00 A.M." id="tue_nine">    <label for="tue_nine">9:00 A.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Tue, 10:00 A.M." id="tue_ten">    <label for="tue_ten">10:00 A.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Tue, 11:00 A.M." id="tue_eleven"> <label for="tue_eleven">11:00 A.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Tue, 12:00 P.M." id="tue_twelve"> <label for="tue_twelve">12:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Tue, 1:00 P.M." id="tue_one">     <label for="tue_one">1:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Tue, 2:00 P.M." id="tue_two">     <label for="tue_two">2:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Tue, 3:00 P.M." id="tue_three">   <label for="tue_three">3:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Tue, 4:00 P.M." id="tue_four">    <label for="tue_four">4:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Tue, 5:00 P.M." id="tue_five">    <label for="tue_five">5:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Tue, 6:00 P.M." id="tue_six">     <label for="tue_six">6:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Tue, 7:00 P.M." id="tue_seven">   <label for="tue_seven">7:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Tue, 8:00 P.M." id="tue_eightpm"> <label for="tue_eightpm">8:00 P.M.</label><br>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <h5>Wednesday</h5>
+                    <input type="radio" name="time" asp-for="Time" value="Wed, 8:00 A.M." id="wed_eightam"> <label for="wed_eightam">8:00 A.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Wed, 9:00 A.M." id="wed_nine">    <label for="wed_nine">9:00 A.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Wed, 10:00 A.M." id="wed_ten">    <label for="wed_ten">10:00 A.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Wed, 11:00 A.M." id="wed_eleven"> <label for="wed_eleven">11:00 A.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Wed, 12:00 P.M." id="wed_twelve"> <label for="wed_twelve">12:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Wed, 1:00 P.M." id="wed_one">     <label for="wed_one">1:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Wed, 2:00 P.M." id="wed_two">     <label for="wed_two">2:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Wed, 3:00 P.M." id="wed_three">   <label for="wed_three">3:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Wed, 4:00 P.M." id="wed_four">    <label for="wed_four">4:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Wed, 5:00 P.M." id="wed_five">    <label for="wed_five">5:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Wed, 6:00 P.M." id="wed_six">     <label for="wed_six">6:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Wed, 7:00 P.M." id="wed_seven">   <label for="wed_seven">7:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Wed, 8:00 P.M." id="wed_eightpm"> <label for="wed_eightpm">8:00 P.M.</label><br>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <h5>Thursday</h5>
+                    <input type="radio" name="time" asp-for="Time" value="Thu, 8:00 A.M." id="thu_eightam"> <label for="thu_eightam">8:00 A.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Thu, 9:00 A.M." id="thu_nine">    <label for="thu_nine">9:00 A.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Thu, 10:00 A.M." id="thu_ten">    <label for="thu_ten">10:00 A.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Thu, 11:00 A.M." id="thu_eleven"> <label for="thu_eleven">11:00 A.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Thu, 12:00 P.M." id="thu_twelve"> <label for="thu_twelve">12:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Thu, 1:00 P.M." id="thu_one">     <label for="thu_one">1:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Thu, 2:00 P.M." id="thu_two">     <label for="thu_two">2:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Thu, 3:00 P.M." id="thu_three">   <label for="thu_three">3:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Thu, 4:00 P.M." id="thu_four">    <label for="thu_four">4:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Thu, 5:00 P.M." id="thu_five">    <label for="thu_five">5:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Thu, 6:00 P.M." id="thu_six">     <label for="thu_six">6:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Thu, 7:00 P.M." id="thu_seven">   <label for="thu_seven">7:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Thu, 8:00 P.M." id="thu_eightpm"> <label for="thu_eightpm">8:00 P.M.</label><br>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <h5>Friday</h5>
+                    <input type="radio" name="time" asp-for="Time" value="Fri, 8:00 A.M." id="fri_eightam"> <label for="fri_eightam">8:00 A.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Fri, 9:00 A.M." id="fri_nine">    <label for="fri_nine">9:00 A.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Fri, 10:00 A.M." id="fri_ten">    <label for="fri_ten">10:00 A.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Fri, 11:00 A.M." id="fri_eleven"> <label for="fri_eleven">11:00 A.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Fri, 12:00 P.M." id="fri_twelve"> <label for="fri_twelve">12:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Fri, 1:00 P.M." id="fri_one">     <label for="fri_one">1:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Fri, 2:00 P.M." id="fri_two">     <label for="fri_two">2:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Fri, 3:00 P.M." id="fri_three">   <label for="fri_three">3:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Fri, 4:00 P.M." id="fri_four">    <label for="fri_four">4:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Fri, 5:00 P.M." id="fri_five">    <label for="fri_five">5:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Fri, 6:00 P.M." id="fri_six">     <label for="fri_six">6:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Fri, 7:00 P.M." id="fri_seven">   <label for="fri_seven">7:00 P.M.</label><br>
+                    <input type="radio" name="time" asp-for="Time" value="Fri, 8:00 P.M." id="fri_eightpm"> <label for="fri_eightpm">8:00 P.M.</label><br>
+                </div>
+            </div>
+            <br />
+            <button type="submit" id="submit1" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

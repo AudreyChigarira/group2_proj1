@@ -7,6 +7,21 @@ namespace SignUpGenius.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "AppointmentTime",
+                columns: table => new
+                {
+                    TimeID = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Day = table.Column<string>(type: "TEXT", nullable: true),
+                    Time = table.Column<string>(type: "TEXT", nullable: true),
+                    Scheduled = table.Column<bool>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AppointmentTime", x => x.TimeID);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Form",
                 columns: table => new
                 {
@@ -26,6 +41,9 @@ namespace SignUpGenius.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "AppointmentTime");
+
             migrationBuilder.DropTable(
                 name: "Form");
         }

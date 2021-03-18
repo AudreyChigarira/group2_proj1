@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SignUpGenius.Models;
+using SignUpGenius.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -29,7 +30,28 @@ namespace SignUpGenius.Controllers
         [HttpGet]
         public IActionResult SignUpPage()
         {
-            return View();
+            DayViewModel dayView = new DayViewModel
+            {
+                Monday = _context.AppointmentTime
+                    .Where(x => x.Day == "Monday" && x.Scheduled == false),
+                Tuesday = _context.AppointmentTime
+                    .Where(x => x.Day == "Tuesday" && x.Scheduled == false),
+                Wednesday = _context.AppointmentTime
+                    .Where(x => x.Day == "Wednesday" && x.Scheduled == false),
+                Thursday = _context.AppointmentTime
+                    .Where(x => x.Day == "Thursday" && x.Scheduled == false),
+                Friday = _context.AppointmentTime
+                    .Where(x => x.Day == "Friday" && x.Scheduled == false),
+                Saturday = _context.AppointmentTime
+                    .Where(x => x.Day == "Saturday" && x.Scheduled == false),
+                Sunday = _context.AppointmentTime
+                    .Where(x => x.Day == "Sunday" && x.Scheduled == false)
+            };
+
+            return View(new MainPageModel
+            {
+                dayViewModel = dayView
+            });
         }
 
         [HttpPost]

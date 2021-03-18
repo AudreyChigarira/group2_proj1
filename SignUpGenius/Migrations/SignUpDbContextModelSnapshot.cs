@@ -15,6 +15,26 @@ namespace SignUpGenius.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "5.0.4");
 
+            modelBuilder.Entity("SignUpGenius.Models.AppointmentTime", b =>
+                {
+                    b.Property<int>("TimeID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Day")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("Scheduled")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Time")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("TimeID");
+
+                    b.ToTable("AppointmentTime");
+                });
+
             modelBuilder.Entity("SignUpGenius.Models.FormModel", b =>
                 {
                     b.Property<int>("ID")

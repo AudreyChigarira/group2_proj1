@@ -4,7 +4,7 @@
 
 th {
     height: 50px;
-    background-color: #3C424E;
+    background-color: lightblue;
     color: white;
     font-size: 20px;
 }
@@ -18,15 +18,7 @@ table {
     border-collapse: separate;
 }
 
-tr:nth-child(even) {
-    background-color: #3C424E;
-}
-
 label {
     width: 75px;
     display: inline-block;
-}
-
-select, input {
-    width: 200px;
 }

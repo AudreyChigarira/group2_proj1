@@ -1175,25 +1175,26 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Microsoft.EntityFrameworkCore.Analyzers >= 5.0.4",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.4",
       "Microsoft.EntityFrameworkCore.Sqlite >= 5.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.4"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\garre\\.nuget\\packages\\": {}
+    "C:\\Users\\colli\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\garre\\OneDrive\\Desktop\\group2_proj1-master\\SignUpGenius\\SignUpGenius.csproj",
+      "projectUniqueName": "C:\\Users\\colli\\OneDrive\\Desktop\\group2_proj1\\SignUpGenius\\SignUpGenius.csproj",
       "projectName": "SignUpGenius",
-      "projectPath": "C:\\Users\\garre\\OneDrive\\Desktop\\group2_proj1-master\\SignUpGenius\\SignUpGenius.csproj",
-      "packagesPath": "C:\\Users\\garre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\garre\\OneDrive\\Desktop\\group2_proj1-master\\SignUpGenius\\obj\\",
+      "projectPath": "C:\\Users\\colli\\OneDrive\\Desktop\\group2_proj1\\SignUpGenius\\SignUpGenius.csproj",
+      "packagesPath": "C:\\Users\\colli\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\colli\\OneDrive\\Desktop\\group2_proj1\\SignUpGenius\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\garre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\colli\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1219,6 +1220,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Analyzers": {
+            "target": "Package",
+            "version": "[5.0.4, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",

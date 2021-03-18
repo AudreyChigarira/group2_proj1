@@ -5,48 +5,44 @@
 @model IEnumerable<FormModel>
 
 <style>
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    th {
+        height: 50px;
+        background-color: #6c95e6;
+        color: white;
+        font-size: 20px;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
     table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
         width: 100%;
-    }
-
-    td, th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-    }
-
-    tr:nth-child(even) {
-        background-color: #dddddd;
+        border-collapse: separate;
     }
 </style>
 
 
-<h2> Here Is Your Appointment Information:</h2>
+<h3 class="display-4 text-center">Appointment Information</h3>
 <br />
 
-<table border="1">
+<table>
     <thead>
         <tr>
-
             <th>ID</th>
-
             <th>Time</th>
-
             <th>Name</th>
-
             <th>Size</th>
-
             <th>Email</th>
-
             <th>Phone</th>
         </tr>
     </thead>
 
-
     <tbody>
-
         @foreach (var x in Model)
         {
             <tr>
@@ -64,7 +60,7 @@
 
 <br />
 <div>
-    <a class="btn btn-primary text-white" asp-action="Index">Home</a>
+    <a class="btn btn-danger text-white" asp-action="Index">Home</a>
 </div>
 
 

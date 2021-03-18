@@ -52,7 +52,6 @@ namespace SignUpGenius.Controllers
         [HttpPost]
         public IActionResult SignUpForm(FormModel appResponse)
         {
-
             //Validate the model
             if (ModelState.IsValid)
             {
@@ -70,7 +69,7 @@ namespace SignUpGenius.Controllers
 
         public IActionResult Appointments()
         {
-            return View();
+            return View(_context.Form);
         }
 
         public IActionResult Privacy()

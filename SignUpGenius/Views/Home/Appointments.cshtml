@@ -1,7 +1,70 @@
 ﻿@{
-    ViewData["Title"] = "Appointments";
+    ViewBag.Title = "View Appointment";
 }
 
+@model IEnumerable<FormModel>
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+
+<h2> Here Is Your Appointment Information:</h2>
+<br />
+
+<table border="1">
+    <thead>
+        <tr>
+
+            <th>ID</th>
+
+            <th>Time</th>
+
+            <th>Name</th>
+
+            <th>Size</th>
+
+            <th>Email</th>
+
+            <th>Phone</th>
+        </tr>
+    </thead>
+
+
+    <tbody>
+
+        @foreach (var x in Model)
+        {
+            <tr>
+                <td>@x.ID</td>
+                <td>@x.Time</td>
+                <td>@x.Name</td>
+                <td>@x.Size</td>
+                <td>@x.Email</td>
+                <td>@x.Phone</td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+<br />
 <div>
-    <h1>Appointments</h1>
+    <a class="btn btn-primary text-white" asp-action="Index">Home</a>
 </div>
+
+

@@ -1181,19 +1181,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\colli\\.nuget\\packages\\": {}
+    "C:\\Users\\garre\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\colli\\OneDrive\\Desktop\\proj1\\SignUpGenius\\SignUpGenius.csproj",
+      "projectUniqueName": "C:\\Users\\garre\\OneDrive\\Desktop\\group2_proj1-master\\SignUpGenius\\SignUpGenius.csproj",
       "projectName": "SignUpGenius",
-      "projectPath": "C:\\Users\\colli\\OneDrive\\Desktop\\proj1\\SignUpGenius\\SignUpGenius.csproj",
-      "packagesPath": "C:\\Users\\colli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\colli\\OneDrive\\Desktop\\proj1\\SignUpGenius\\obj\\",
+      "projectPath": "C:\\Users\\garre\\OneDrive\\Desktop\\group2_proj1-master\\SignUpGenius\\SignUpGenius.csproj",
+      "packagesPath": "C:\\Users\\garre\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\garre\\OneDrive\\Desktop\\group2_proj1-master\\SignUpGenius\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\colli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\garre\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

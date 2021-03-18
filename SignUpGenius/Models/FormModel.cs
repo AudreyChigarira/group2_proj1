@@ -16,6 +16,7 @@ namespace SignUpGenius.Models
         [Required]
         public string Name { get; set; }
         [Required]
+        [Range(1, 50)]
         public int Size { get; set; }
         [Required]
         //[RegularExpression(@"\b[A - Z0 - 9._ % +-] +@[A-Z0-9.-]+\.[A-Z]{2,}\b", ErrorMessage = "Please enter a valid email address.")]

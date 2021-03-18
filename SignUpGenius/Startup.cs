@@ -47,6 +47,8 @@ namespace SignUpGenius
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
+
+            //Allows us to access static files like bootstrap and Jquery.
             app.UseStaticFiles();
 
             app.UseRouting();

@@ -1,16 +1,8 @@
-﻿
-
-@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
     ViewBag.Title = "View Appointment";
 }
 
 @model IEnumerable<FormModel>
-
-
-
 
 <style>
     table {
@@ -32,6 +24,7 @@
 
 
 <h2> Here Is Your Appointment Information:</h2>
+<br />
 
 <table border="1">
     <thead>
@@ -71,8 +64,7 @@
 
 <br />
 <div>
-    <h4>Click <a asp-action="SignUpForm">here</a> to go back to Home Page.</h4>
-
+    <a class="btn btn-primary text-white" asp-action="Index">Home</a>
 </div>
 
 

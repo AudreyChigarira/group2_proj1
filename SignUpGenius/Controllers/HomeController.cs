@@ -52,7 +52,6 @@ namespace SignUpGenius.Controllers
         [HttpPost]
         public IActionResult SignUpForm(FormModel appResponse)
         {
-
             //Validate the model
             if (ModelState.IsValid)
             {

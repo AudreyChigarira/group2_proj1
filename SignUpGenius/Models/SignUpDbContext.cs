@@ -11,5 +11,7 @@ namespace SignUpGenius.Models
         }
 
         public DbSet<FormModel> Form { get; set; }
+
+        public DbSet<AppointmentTime> AppointmentTime { get; set; }
     }
 }
